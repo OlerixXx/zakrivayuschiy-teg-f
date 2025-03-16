@@ -110,7 +110,7 @@
   font-size: var(--p-font-size);
 }
 
-.card__button-container { 
+.card__button-container {
   display: flex;
   justify-content: flex-end;
   margin: 25px 25px 25px 0;
