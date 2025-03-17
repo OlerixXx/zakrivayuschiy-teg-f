@@ -5,6 +5,8 @@
     url(./Inter-Variable.woff2)
     format('woff2 supports variations'),
     url(./Inter-Variable.woff2) format('woff2-variations');
+  /* Почему то без свойства ниже жалуются тесты, мол отсутствуют настройки вариативных шрифтов */
+  font-variation-settings: 'wght' 400, 'wdth' 60, 'slnt' 0, 'opsz' 0;
   font-weight: 400 785;
   font-display: swap;
 }
