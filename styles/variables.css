@@ -8,9 +8,9 @@
   --font-weight-md: 400;
   --font-weight-lg: 700;
   --main-color: #000;
-  --main-font-famaly: 'Inter Variable';
+  --main-font-famaly: 'Inter Variable', sans-serif;
   --main-font-weight: 400;
-  --accent-font-famaly: 'PressStart2P';
+  --accent-font-famaly: 'PressStart2P', fantasy;
   --bg-img:
     repeating-linear-gradient(90deg, #d3d3d3 0 2px, transparent 2px 4px),
     repeating-linear-gradient(0deg, #d3d3d3 0 2px, transparent 2px 4px),
@@ -20,42 +20,50 @@
   --red: #FF0000;
 
   --header-width: clamp(375px, 50%, 700px);
-  --header-height: 368px;
+  --header-paddings: 128px 0;
   --content-width: clamp(375px, 50%, 700px);
-  --h1-font-weight: var(--font-weight-md);
+  --h1-font-weight: var(--font-weight-md, 400);
   --h1-font-size: clamp(3.0625rem, 2.7104rem + 1.5023vw, 4.0625rem);
-  --h2-font-weight: var(--font-weight-md);
+  --h2-font-weight: var(--font-weight-md, 400);
   --h2-font-size: clamp(0.875rem, 0.6769rem + 0.8451vw, 1.4375rem);
-  --h3-font-weight: var(--font-weight-lg);
-  --h3-font-size: var(--font-size-md);
-  --p-font-weight: var(--font-weight-md);
-  --p-font-size: var(--font-size-md);
-  --btn-font-size: var(--font-size-sm);
-  --btn-font-weight: var(--font-weight-md);
-  --label-font-size: var(--font-size-sm);
-  --label-font-weight: var(--font-weight-md);
-  --text-stroke-color: var(--white);
-  --border-color: var(--black);
-  --dialog__button-font-size: var(--font-size-sm);
-  --dialog__button-font-weight: var(--font-weight-md);
+  --h3-font-weight: var(--font-weight-lg, 700);
+  --h3-font-size: var(--font-size-md, 18px);
+  --p-font-weight: var(--font-weight-md, 400);
+  --p-font-size: var(--font-size-md, 18px);
+  --p-line-height: 21px;
+  --main-font-varitaion-settings: var('wght' 400, 'wdth' 60, 'slnt' 0, 'opsz' 0);
+  --btn-font-size: var(--font-size-sm, 14px);
+  --btn-font-weight: var(--font-weight-md, 400);
+  --btn-text-blend-color: var(--white, #fff);
+  --btn-bg-hover-color: var(--black, #000);
+  --btn-bg-color: var(--white, #fff);
+  --label-font-size: var(--font-size-sm, 14px);
+  --label-font-weight: var(--font-weight-md, 400);
+  --text-stroke-color: var(--white, #fff);
+  --border-color: var(--black, #000);
+  --dialog-button-font-size: var(--font-size-sm, 14px);
+  --dialog-button-font-weight: var(--font-weight-md, 400);
+  --dialog-floppy-icon-width: 39px;
+  --dialog-floppy-icon-height: 39px;
+  --dialog-paddings: 30px;
   --floppy-icon-width: 21px;
   --floppy-icon-height: 21px;
-  --dialog__floppy-icon-width: 39px;
-  --dialog__floppy-icon-height: 39px;
-  --container-bg-color: var(--white);
-  --button-text-color: var(--black);
-  --button-text-hover-color: var(--white);
-  --button-bg-hover-color: var(--black);
-  --button-bg-color: var(--white);
-  --heart-main-color: var(--black);
-  --heart-animation-color: var(--red);
+  --floppy-icon-blend-color: var(--white, #fff);
+  --container-bg-color: var(--white, #fff);
+  --heart-main-color: var(--black, #000);
+  --heart-animation-color: var(--red, #FF0000);
+  --card-label-top: 25px;
+  --card-label-right: 25px;
 }
 
 @media (width <= 375px) {
   :root {
     --header-width: 100%;
+    --header-paddings: 120px 0;
     --content-width: 100%;
     --floppy-icon-width: 28px;
     --floppy-icon-height: 28px;
+    --card-label-right: 13px;
+    --dialog-paddings: 32px 40px;
   }
 }
