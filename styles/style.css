@@ -19,7 +19,6 @@
   background: var(--bg-img) center / cover fixed;
   min-inline-size: 320px;
   min-block-size: 100dvb;
-  font-variation-settings: var(--main-font-varitaion-settings);
 }
 
 .header {
@@ -297,6 +296,12 @@
 
 .mix_filter {
   filter: hue-rotate(10deg) saturate(130%) contrast(120%);
+}
+
+@supports (font-variation-settings: normal) {
+  .page {
+    font-variation-settings: var(--main-font-varitaion-settings);
+  }
 }
 
 @supports (-webkit-text-stroke: 1px var(--text-stroke-color)) {
