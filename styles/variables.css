@@ -31,7 +31,7 @@
   --p-font-weight: var(--font-weight-md, 400);
   --p-font-size: var(--font-size-md, 18px);
   --p-line-height: 21px;
-  --main-font-varitaion-settings: var('wght' 400, 'wdth' 60, 'slnt' 0, 'opsz' 0);
+  --main-font-varitaion-settings: 'wght' 400, 'wdth' 60, 'slnt' 0, 'opsz' 0;
   --btn-font-size: var(--font-size-sm, 14px);
   --btn-font-weight: var(--font-weight-md, 400);
   --btn-text-blend-color: var(--white, #fff);
